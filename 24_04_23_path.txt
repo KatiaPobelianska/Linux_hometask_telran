@@ -1,0 +1,17 @@
+   0 pwd
+   1 mkdir -p /home/user/start
+   2 cd /home/user/start
+   3 touch 1.txt
+   4 echo "Start" > 1.txt
+   5 date >> 1.txt
+   6 cat 1.txt
+   7 cd
+   8 /opt/task
+   9 mkdir -p /opt/task
+  10 cd /opt/task
+  11 touch start.txt
+  12 cp /home/user/start/1.txt /opt/task/start.txt
+  13 cat start.txt
+  14 ls -l / | tail -4 >> start.txt
+  15 cat start.txt
+  16 history > 24_04_23_path.txt
