@@ -1,0 +1,16 @@
+1. [ec2-user@ip-172-31-33-20 katrin]$ cat home_work_script555.sh
+#!/bin/bash
+
+
+        for i in {1..10}
+        do
+        echo "Every 15Min it counts!"
+        output1="${i}_$(date +'%d.%m.%Y')"
+        touch /opt/280323_morning/katrin/$output1.txt
+        done
+
+2. chmod u+x home_work_script555.sh
+
+3. crontab -e
+
+4. 15 * * * * /opt/280323_morning/katrin/output1.txt
